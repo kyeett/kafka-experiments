@@ -8,7 +8,7 @@ import (
 	"github.com/kyeett/kafka-experiments/types"
 )
 
-type exampleConsumerGroupHandler struct{}
+type exampleConsumerGroupHandler struct{} 
 
 func (exampleConsumerGroupHandler) Setup(_ sarama.ConsumerGroupSession) error   { return nil }
 func (exampleConsumerGroupHandler) Cleanup(_ sarama.ConsumerGroupSession) error { return nil }
